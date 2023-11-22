@@ -4,6 +4,7 @@ function App() {
     return (
         <Flex>
             <Text>TEST</Text>
+            {/* <GameCard /> */}
         </Flex>
     );
 }
