@@ -2,22 +2,26 @@ import { Flex, Text } from "@radix-ui/themes";
 import { GamesService } from "./services/GamesService";
 import { useState } from "react";
 import { Game } from "./types/Game";
+import GameCard from "./components/GameCard";
 
 function App() {
-    const [data, setData] = useState<Game[] | undefined>();
+    const [gamesList, setGameList] = useState<Game[] | undefined>();
 
-    if (data === undefined) {
+    if (gamesList === undefined) {
         GamesService.fetchGamesAsync().then((res) => {
-            setData(res);
+            setGameList(res);
         });
     }
 
-    console.log(data);
+    if (gamesList === undefined) {
+        return null;
+    }
 
     return (
-        <Flex>
-            <Text>TEST</Text>
-            {/* <GameCard /> */}
+        <Flex className="flex-wrap">
+            {gamesList.map((value) => {
+                return <GameCard key={value.id} game={value} />;
+            })}
         </Flex>
     );
 }
