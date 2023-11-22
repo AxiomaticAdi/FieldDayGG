@@ -1,10 +1,15 @@
-import { Flex, Text } from "@radix-ui/themes";
+import { Flex } from "@radix-ui/themes";
+import { GamesService } from "./services/GamesService";
+import GameCard from "./components/GameCard";
 
 function App() {
+    const gamesList = GamesService.fetchGames();
+
     return (
-        <Flex>
-            <Text>TEST</Text>
-            {/* <GameCard /> */}
+        <Flex className="flex-wrap">
+            {gamesList.map((value) => {
+                return <GameCard key={value.id} game={value} />;
+            })}
         </Flex>
     );
 }

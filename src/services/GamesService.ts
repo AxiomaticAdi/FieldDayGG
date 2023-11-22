@@ -6,7 +6,7 @@ function fetchGames(): Game[] {
         {
             id: "game1",
             name: "Egg Toss",
-            imgUri: "EggToss.png",
+            imgUri: "/EggToss.png",
             setting: Setting.Outdoor,
             equipment: ["eggs"],
             minPlayerCount: 2,
@@ -15,7 +15,7 @@ function fetchGames(): Game[] {
         {
             id: "game2",
             name: "Tug of War",
-            imgUri: "TugOfWar.png",
+            imgUri: "/TugOfWar.png",
             setting: Setting.Any,
             equipment: ["rope"],
             minPlayerCount: 4,
