@@ -13,6 +13,6 @@ FieldDay.gg is a web application designed to alleviate the stress of organizing 
     -   Physical Activity Level: Cater to different levels of physical exertion.
     -   Number of Participants: Find games for small groups or large crowds.
     -   Skill Level: Choose from beginner-friendly to more challenging games.
-    -   Easy Field Day Planning: Seamlessly create your own field day itinerary. Add games from our vast collection to your personal plan, ensuring a well-organized and enjoyable day.
+-   Easy Field Day Planning: Seamlessly create your own field day itinerary. Add games from our vast collection to your personal plan, ensuring a well-organized and enjoyable day.
 
 Our goal is to transform the process find finding the perfect Field Day activities for your event into a delightful experience!
