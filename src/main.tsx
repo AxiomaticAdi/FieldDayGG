@@ -7,11 +7,13 @@ import "./index.css";
 import "@radix-ui/themes/styles.css";
 
 import { Theme } from "@radix-ui/themes";
+import ErrorPage from "./pages/ErrorPage.tsx";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <App />,
+        errorElement: <ErrorPage />,
     },
 ]);
 
