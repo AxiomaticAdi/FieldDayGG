@@ -28,7 +28,7 @@ export function sheetRowToMatch(cell: SheetRow, id: string): Game {
     return {
         id: gameId,
         equipment: equipment,
-        imgUri: image,
+        imgUri: image === "undefined" ? undefined : image,
         minPlayerCount: minCount,
         name: name,
         setting: setting,
