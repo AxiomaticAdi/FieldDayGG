@@ -1,4 +1,4 @@
-import { Flex, Heading, Text } from "@radix-ui/themes";
+import { Button, Flex, Heading, Text } from "@radix-ui/themes";
 import { GamesService } from "./services/GamesService";
 import { useState } from "react";
 import { Game } from "./types/Game";
@@ -26,6 +26,7 @@ function App() {
                     return <GameCardModal key={value.id} game={value} />;
                 })}
             </Flex>
+            <Button> TEST ME </Button>
         </Flex>
     );
 }

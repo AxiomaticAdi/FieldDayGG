@@ -8,10 +8,10 @@ export default function ErrorPage() {
     return (
         <div className="flex flex-col items-center justify-center">
             <Heading>Oops!</Heading>
-            <p>Sorry, an unexpected error has occurred.</p>
-            <p>
+            <div>Sorry, an unexpected error has occurred.</div>
+            <div>
                 <i>{error.statusText || error.message}</i>
-            </p>
+            </div>
             <img src={"/ErrorPage.png"} width={"300px"} />
         </div>
     );
