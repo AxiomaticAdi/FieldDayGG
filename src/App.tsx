@@ -2,7 +2,7 @@ import { Flex, Heading, Text } from "@radix-ui/themes";
 import { GamesService } from "./services/GamesService";
 import { useState } from "react";
 import { Game } from "./types/Game";
-import GameCard from "./components/GameCard";
+import GameCardModal from "./components/GameCardModal";
 
 function App() {
     const [gamesList, setGameList] = useState<Game[] | undefined>();
@@ -19,11 +19,11 @@ function App() {
     }
 
     return (
-        <Flex className="justify-center align-center flex-col p-8">
+        <Flex className="align-center flex-col justify-center p-8">
             <Heading className="flex-1 self-center">FieldDay.gg</Heading>
-            <Flex className="flex-row flex-wrap flex-1 justify-center self-center">
+            <Flex className="flex-1 flex-row flex-wrap justify-center self-center">
                 {gamesList.map((value) => {
-                    return <GameCard key={value.id} game={value} />;
+                    return <GameCardModal key={value.id} game={value} />;
                 })}
             </Flex>
         </Flex>
